@@ -1,0 +1,342 @@
+/* -------- ALL SETTINGS ------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+.visually-hidden {
+    display: none;
+}
+/* ------- END ALL SETTINGS -------- */
+
+/* ------- HEADER -------*/
+.header-main {
+    margin-top: 20px;;
+    min-height: 100px;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ } 
+
+.main-nav .header-logo {
+    font-family: 'Lobster', cursive;
+    font-size: 48px;
+    color: #34547A;
+    text-transform: uppercase;
+}
+
+.header-logo p {
+    margin: 0;
+}
+
+.main-nav .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 600px;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.nav-list .nav-list-item {
+    height: 24px;
+    width: 150px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.nav-list .nav-list-item a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-list .nav-list-item a:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.3);
+    border-radius: 20%;
+    background-color: #34547A ;
+    color: white;
+}
+/* ------- END HEADER ------- */
+
+/* ------- PROMO ------- */
+.promo {
+    min-height: 600px;
+}
+
+.wrapper-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding-top: 160px;
+}
+
+.promo-text {
+    width: 380px;
+}
+
+.promo-text h2{
+    font-size: 48px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.promo-text p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 60px;
+    margin-bottom: 60px;;
+    text-align: left;
+}
+
+.promo-text a {
+    display: block;
+    width: 205px;
+    height: 65px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #34547A;
+    color: white;
+    padding: 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.promo-text a:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+/* ------ END PROMO ------- */
+
+/* ------- ABOUT ME ------- */
+.about-me {
+    min-height: 300px;
+}
+
+.about-me h2 {
+    position: relative;
+    top: 50px;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.about-me p {
+    position: relative;
+    top: 70px;
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* -------- END ABOUT ME --------*/
+
+/* ------- MY PROJECTS ------- */
+.my-projects {
+    min-height: 600px;
+}
+
+.my-projects h2 {
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+    padding: 50px;
+}
+
+.my-projects .projects-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.my-projects .projects-list .projects-list-item {
+    max-width: 230px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10%;
+    text-align: center;
+    transition: transform 0.5s ease-in;
+}
+
+.my-projects .projects-list .projects-list-item:hover {
+    transition: transform 0.5s ease-in;
+    transform: scale(1.2);
+}
+
+.my-projects .projects-list .projects-list-item p {
+    font-size: 16px;
+    font-weight: 400;
+}
+/* ------- END MY PROJECTS ------- */
+
+/* ------- SKILLS ------- */
+.skills {
+    min-height: 600px;
+}
+
+.skills h2 {
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+    transform: translateY(100px);
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    transform: translateY(200px);
+}
+
+.skills-list .skills-list-item {
+    text-align: center;
+}
+
+.skills-list .skills-list-item .line{
+    background-color: #f3f3f3;
+    border: 0;
+    height: 18px;
+    border-radius: 9px;
+}
+
+.progress-bar {
+    display: flex;
+    
+}
+
+.progress-block {
+    width: 12px;
+    height: 12px;
+    margin: 2px 1px;
+    background-color: #E6E6E6;
+}
+
+  .progress-block.active {
+    background-color: #34547A;
+}
+/* ------- END SKILLS ------- */
+
+/* ------- CALL FORM ------- */
+.call-form {
+    min-height: 700px;
+    background: #EEEFF1;
+}
+
+.call-form .form-group {
+    margin-bottom: 20px;
+}
+
+.call-form h2 {
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+    transform: translateY(100px);
+}
+
+.call-form form {
+    display: flex;
+    margin: 0 auto;
+    transform: translateY(50px);
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 550px;
+    transform: translateY(200px);
+}
+
+.call-form form .form-name,
+.call-form form .form-email {
+    width: 255px;
+    height: 50px;
+    background: #FFFFFF;
+    border: none;
+    padding: 10px;
+}
+
+.call-form form .form-name {
+    margin-right: 30px;
+}
+
+.call-form form .form-message {
+    width: 550px;
+    border: none;
+    background: #FFFFFF;
+    padding: 10px;
+}
+
+.call-form form .form-btn {
+    width: 190px;
+    height: 55px;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    background: #34547A;
+    color: #FFFFFF;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.call-form form .form-btn:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+/* ------- END CALL FORM ------- */
+
+/* ------- FOOTER ------- */
+
+.footer-main {
+    min-height: 151px;
+    background-color: #34547A;
+    color: white;
+}
+
+.footer-main .flex-wrapper {
+    display: flex;
+    height: inherit;
+    justify-content: space-between;
+    transform: translateY(40px);
+}
+
+.footer-main .footer-logo p:first-child {
+    font-family: 'Lobster', cursive;
+    font-size: 48px;
+    text-transform: uppercase;
+    
+}
+
+.footer-main .footer-logo p:last-child {
+    font-size: 13px;
+}
+
+.footer-main .social-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 250px;
+}
